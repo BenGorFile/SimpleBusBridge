@@ -3,9 +3,9 @@
 
 [![Build Status](https://travis-ci.org/BenGorFile/SimpleBusBridge.svg?branch=master)](https://travis-ci.org/BenGorFile/SimpleBusBridge)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/BenGorFile/SimpleBusBridge/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/BenGorFile/SimpleBusBridge/?branch=master)
-[![Total Downloads](https://poser.pugx.org/bengor-file/simple-bus-bridge-bundle/downloads)](https://packagist.org/packages/bengor-file/simple-bus-bridge-bundle/)
-[![Latest Stable Version](https://poser.pugx.org/bengor-file/simple-bus-bridge-bundle/v/stable.svg)](https://packagist.org/packages/bengor-file/simple-bus-bridge-bundle/)
-[![Latest Unstable Version](https://poser.pugx.org/bengor-file/simple-bus-bridge-bundle/v/unstable.svg)](https://packagist.org/packages/bengor-file/simple-bus-bridge-bundle/)
+[![Total Downloads](https://poser.pugx.org/bengor-file/simple-bus-bridge/downloads)](https://packagist.org/packages/bengor-file/simple-bus-bridge/)
+[![Latest Stable Version](https://poser.pugx.org/bengor-file/simple-bus-bridge/v/stable.svg)](https://packagist.org/packages/bengor-file/simple-bus-bridge/)
+[![Latest Unstable Version](https://poser.pugx.org/bengor-file/simple-bus-bridge/v/unstable.svg)](https://packagist.org/packages/bengor-file/simple-bus-bridge/)
 
 ##Requirements
 PHP >= 5.5
@@ -54,7 +54,7 @@ This library is created by:
 **@gorkalaucirica** - [gorka.lauzirika@gmail.com](mailto:gorka.lauzirika@gmail.com)
 
 ##Licensing Options
-[![License](https://poser.pugx.org/bengor-file/simple-bus-bridge-bundle/license.svg)](https://github.com/BenGorFile/SimpleBusBridge/blob/master/LICENSE)
+[![License](https://poser.pugx.org/bengor-file/simple-bus-bridge/license.svg)](https://github.com/BenGorFile/SimpleBusBridge/blob/master/LICENSE)
 
 [1]: http://www.phpspec.net/
 [2]: http://symfony.com/doc/current/contributing/code/index.html
