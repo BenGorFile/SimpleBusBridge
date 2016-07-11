@@ -12,7 +12,7 @@
 
 namespace BenGorFile\SimpleBusBridge\CommandBus;
 
-use BenGorFile\File\Infrastructure\CommandBus\UserCommandBus;
+use BenGorFile\File\Infrastructure\CommandBus\FileCommandBus;
 use SimpleBus\Message\Bus\MessageBus;
 
 /**
@@ -20,7 +20,7 @@ use SimpleBus\Message\Bus\MessageBus;
  *
  * @author Beñat Espiña <benatespina@gmail.com>
  */
-class SimpleBusUserCommandBus implements UserCommandBus
+class SimpleBusFileCommandBus implements FileCommandBus
 {
     /**
      * The message bus.

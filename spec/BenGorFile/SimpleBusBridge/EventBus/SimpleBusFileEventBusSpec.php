@@ -12,19 +12,19 @@
 
 namespace spec\BenGorFile\SimpleBusBridge\EventBus;
 
-use BenGorFile\SimpleBusBridge\EventBus\SimpleBusUserEventBus;
-use BenGorFile\File\Domain\Model\Event\UserEvent;
-use BenGorFile\File\Infrastructure\Domain\Model\UserEventBus;
+use BenGorFile\File\Domain\Model\FileEvent;
+use BenGorFile\File\Infrastructure\Domain\Model\FileEventBus;
+use BenGorFile\SimpleBusBridge\EventBus\SimpleBusFileEventBus;
 use PhpSpec\ObjectBehavior;
 use SimpleBus\Message\Bus\MessageBus;
 
 /**
- * Spec file of SimpleBusUserEventBus class.
+ * Spec file of SimpleBusFileEventBus class.
  *
  * @author Beñat Espiña <benatespina@gmail.com>
  * @author Gorka Laucirica <gorka.lauzirika@gmail.com>
  */
-class SimpleBusUserEventBusSpec extends ObjectBehavior
+class SimpleBusFileEventBusSpec extends ObjectBehavior
 {
     function let(MessageBus $messageBus)
     {
@@ -33,15 +33,15 @@ class SimpleBusUserEventBusSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType(SimpleBusUserEventBus::class);
+        $this->shouldHaveType(SimpleBusFileEventBus::class);
     }
 
     function it_implements_user_event_bus()
     {
-        $this->shouldImplement(UserEventBus::class);
+        $this->shouldImplement(FileEventBus::class);
     }
 
-    function it_handles_a_command(MessageBus $messageBus, UserEvent $event)
+    function it_handles_a_command(MessageBus $messageBus, FileEvent $event)
     {
         $messageBus->handle($event)->shouldBeCalled();
 

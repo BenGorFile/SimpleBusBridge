@@ -12,8 +12,8 @@
 
 namespace BenGorFile\SimpleBusBridge\EventBus;
 
-use BenGorFile\File\Domain\Model\Event\UserEvent;
-use BenGorFile\File\Infrastructure\Domain\Model\UserEventBus;
+use BenGorFile\File\Domain\Model\FileEvent;
+use BenGorFile\File\Infrastructure\Domain\Model\FileEventBus;
 use SimpleBus\Message\Bus\MessageBus;
 
 /**
@@ -21,7 +21,7 @@ use SimpleBus\Message\Bus\MessageBus;
  *
  * @author Beñat Espiña <benatespina@gmail.com>
  */
-class SimpleBusUserEventBus implements UserEventBus
+class SimpleBusFileEventBus implements FileEventBus
 {
     /**
      * The message bus.
@@ -43,7 +43,7 @@ class SimpleBusUserEventBus implements UserEventBus
     /**
      * {@inheritdoc}
      */
-    public function handle(UserEvent $anEvent)
+    public function handle(FileEvent $anEvent)
     {
         $this->messageBus->handle($anEvent);
     }

@@ -12,19 +12,19 @@
 
 namespace spec\BenGorFile\SimpleBusBridge\CommandBus;
 
-use BenGorFile\SimpleBusBridge\CommandBus\SimpleBusUserCommandBus;
-use BenGorFile\File\Application\Command\SignUp\SignUpUserCommand;
-use BenGorFile\File\Infrastructure\CommandBus\UserCommandBus;
+use BenGorFile\File\Application\Command\Upload\UploadFileCommand;
+use BenGorFile\File\Infrastructure\CommandBus\FileCommandBus;
+use BenGorFile\SimpleBusBridge\CommandBus\SimpleBusFileCommandBus;
 use PhpSpec\ObjectBehavior;
 use SimpleBus\Message\Bus\MessageBus;
 
 /**
- * Spec file of SimpleBusUserCommandBus class.
+ * Spec file of SimpleBusFileCommandBus class.
  *
  * @author Beñat Espiña <benatespina@gmail.com>
  * @author Gorka Laucirica <gorka.lauzirika@gmail.com>
  */
-class SimpleBusUserCommandBusSpec extends ObjectBehavior
+class SimpleBusFileCommandBusSpec extends ObjectBehavior
 {
     function let(MessageBus $messageBus)
     {
@@ -33,15 +33,15 @@ class SimpleBusUserCommandBusSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType(SimpleBusUserCommandBus::class);
+        $this->shouldHaveType(SimpleBusFileCommandBus::class);
     }
 
     function it_implements_user_command_bus()
     {
-        $this->shouldImplement(UserCommandBus::class);
+        $this->shouldImplement(FileCommandBus::class);
     }
 
-    function it_handles_a_command(MessageBus $messageBus, SignUpUserCommand $command)
+    function it_handles_a_command(MessageBus $messageBus, UploadFileCommand $command)
     {
         $messageBus->handle($command)->shouldBeCalled();
 
