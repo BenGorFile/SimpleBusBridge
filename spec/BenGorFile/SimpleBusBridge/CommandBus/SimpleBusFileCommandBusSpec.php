@@ -36,7 +36,7 @@ class SimpleBusFileCommandBusSpec extends ObjectBehavior
         $this->shouldHaveType(SimpleBusFileCommandBus::class);
     }
 
-    function it_implements_user_command_bus()
+    function it_implements_file_command_bus()
     {
         $this->shouldImplement(FileCommandBus::class);
     }

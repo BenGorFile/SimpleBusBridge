@@ -36,7 +36,7 @@ class SimpleBusFileEventBusSpec extends ObjectBehavior
         $this->shouldHaveType(SimpleBusFileEventBus::class);
     }
 
-    function it_implements_user_event_bus()
+    function it_implements_file_event_bus()
     {
         $this->shouldImplement(FileEventBus::class);
     }
