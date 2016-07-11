@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": "^5.5 || ^7.0",
-        "bengor-file/file": "^dev-master",
+        "bengor-file/file": "dev-master",
         "simple-bus/message-bus": "^2.2"
 
     },
@@ -43,5 +43,7 @@
         "branch-alias": {
             "dev-master": "1.1.x-dev"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
