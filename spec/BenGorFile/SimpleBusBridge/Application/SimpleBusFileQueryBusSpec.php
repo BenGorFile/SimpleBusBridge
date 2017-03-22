@@ -13,7 +13,6 @@
 namespace spec\BenGorFile\SimpleBusBridge\Application;
 
 use Ajgl\SimpleBus\Message\Bus\CatchReturnMessageBus;
-use BenGorFile\File\Application\Command\Upload\UploadFileCommand;
 use BenGorFile\File\Infrastructure\Application\FileQueryBus;
 use BenGorFile\SimpleBusBridge\Application\SimpleBusFileQueryBus;
 use PhpSpec\ObjectBehavior;
@@ -26,7 +25,7 @@ use PhpSpec\ObjectBehavior;
  */
 class SimpleBusFileQueryBusSpec extends ObjectBehavior
 {
-    function let(MessageBus $messageBus)
+    function let(CatchReturnMessageBus $messageBus)
     {
         $this->beConstructedWith($messageBus);
     }
@@ -39,12 +38,5 @@ class SimpleBusFileQueryBusSpec extends ObjectBehavior
     function it_implements_file_command_bus()
     {
         $this->shouldImplement(FileQueryBus::class);
-    }
-
-    function it_handles_a_query_bus(CatchReturnMessageBus $messageBus, UploadFileCommand $command)
-    {
-        $messageBus->handle($command)->shouldBeCalled();
-
-        $this->handle($command);
     }
 }
