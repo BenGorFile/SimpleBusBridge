@@ -18,9 +18,9 @@
     ],
     "require": {
         "php": "^5.5 || ^7.0",
-        "bengor-file/file": "^0.2.0",
+        "ajgl/simple-bus-query-bus": "^0.1",
+        "bengor-file/file": "^0.3.0",
         "simple-bus/message-bus": "^2.2"
-
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^1.11",
@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BenGorFile\\SimpleBusBridge\\": "src/BenGorFile/SimpleBusBridge/"
+            "BenGorFile\\SimpleBusBridge\\": "src/BenGorFile/SimpleBusBridge"
         },
         "exclude-from-classmap": ["/spec/"]
     },

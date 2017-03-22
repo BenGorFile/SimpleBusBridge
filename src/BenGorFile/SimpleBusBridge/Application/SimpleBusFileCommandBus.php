@@ -12,7 +12,7 @@
 
 namespace BenGorFile\SimpleBusBridge\CommandBus;
 
-use BenGorFile\File\Infrastructure\CommandBus\FileCommandBus;
+use BenGorFile\File\Infrastructure\Application\FileCommandBus;
 use SimpleBus\Message\Bus\MessageBus;
 
 /**
