@@ -13,7 +13,7 @@
 namespace spec\BenGorFile\SimpleBusBridge\CommandBus;
 
 use BenGorFile\File\Application\Command\Upload\UploadFileCommand;
-use BenGorFile\File\Infrastructure\CommandBus\FileCommandBus;
+use BenGorFile\File\Infrastructure\Application\FileCommandBus;
 use BenGorFile\SimpleBusBridge\CommandBus\SimpleBusFileCommandBus;
 use PhpSpec\ObjectBehavior;
 use SimpleBus\Message\Bus\MessageBus;
