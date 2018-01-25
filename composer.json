@@ -19,7 +19,7 @@
     "require": {
         "php": "^5.5 || ^7.0",
         "ajgl/simple-bus-query-bus": "^0.1",
-        "bengor-file/file": "^0.4",
+        "bengor-file/file": ">=0.4",
         "simple-bus/message-bus": "^2.2"
     },
     "require-dev": {
